@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B for Barta</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="sidebar">
+        <div class="title">B for Barta</div>
+        <div id="userList"></div>
+    </div>
+
+    <div class="chat-area">
+        <div class="chat-header" id="chatWith">Select a contact</div>
+
+        <div class="messages" id="messages"></div>
+
+        <div class="input-area">
+            <input type="text" id="messageInput" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/chat.js"></script>
+</body>
+</html>
