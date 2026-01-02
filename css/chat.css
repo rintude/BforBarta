@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0b0e14;
+    color: #ff003c;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    border-right: 2px solid #ff003c;
+    padding: 10px;
+}
+
+.title {
+    font-size: 20px;
+    border-bottom: 1px solid #ff003c;
+    padding-bottom: 10px;
+}
+
+/* Chat Area */
+.chat-area {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px;
+    border-bottom: 2px solid #ff003c;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ff003c;
+    width: fit-content;
+}
+
+.me {
+    align-self: flex-end;
+}
+
+/* Input */
+.input-area {
+    display: flex;
+    border-top: 2px solid #ff003c;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: #ff003c;
+}
+
+button {
+    width: 100px;
+    background: transparent;
+    border-left: 2px solid #ff003c;
+    color: #ff003c;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 40%;
+    }
+    .chat-area {
+        width: 60%;
+    }
+}
